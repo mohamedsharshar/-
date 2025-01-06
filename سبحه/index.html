@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبحة الكترونية علي روح جدة بسملة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="notificationBar" class="notification">
+        <p id="notificationMessage">اضغطي للدعاء أو الاستغفار.</p>
+    </div>
+
+    <div class="container">
+        <h1> سبحة الكترونية علي روح جدة بسملة</h1>
+        <p>اضغطي على الحبات للدعاء أو الاستغفار.</p>
+        
+        <div id="timerDisplay">الوقت: 00:00</div> <!-- إضافة المؤقت هنا -->
+        
+        <div class="tasbih">
+            <!-- حبات السبحة -->
+            <button class="bead" onclick="addDua('اللهم اغفر لها')">اللهم اغفر لها</button>
+            <button class="bead" onclick="addDua('اللهم ارحمها')">اللهم ارحمها</button>
+            <button class="bead" onclick="addDua('اللهم نور قبرها')">اللهم نور قبرها</button>
+            <button class="bead" onclick="addDua('اللهم اجعل قبرها روضة من رياض الجنة')">اللهم اجعل قبرها روضة من رياض الجنة</button>
+            <button class="bead" onclick="addDua('اللهم ثبت قلبها')">اللهم ثبت قلبها</button>
+            <button class="bead" onclick="addDua('اللهم اجعل آخر كلامها لا إله إلا الله')">اللهم اجعل آخر كلامها لا إله إلا الله</button>
+            <button class="bead" onclick="addDua('اللهم عافيها في بدنها')">اللهم عافيها في بدنها</button>
+            <button class="bead" onclick="addDua('اللهم أبدلها دارًا خيرًا من دارها')">اللهم أبدلها دارًا خيرًا من دارها</button>
+            <button class="bead" onclick="addDua('اللهم اغفر لها وارحمها')">اللهم اغفر لها وارحمها</button>
+            <button class="bead" onclick="addDua('اللهم وسع قبرها')">اللهم وسع قبرها</button>
+            <button class="bead" onclick="addDua('اللهم اجعل قبرها نورًا')">اللهم اجعل قبرها نورًا</button>
+            <button class="bead" onclick="addDua('اللهم اجعل الجنة مثواها')">اللهم اجعل الجنة مثواها</button>
+            <button class="bead" onclick="addDua('اللهم أراها مقعدها من الجنة')">اللهم أراها مقعدها من الجنة</button>
+            <button class="bead" onclick="addDua('اللهم اجعل كل عملها في ميزان حسناتها')">اللهم اجعل كل عملها في ميزان حسناتها</button>
+            <button class="bead" onclick="addDua('اللهم آمين')">اللهم آمين</button>
+            <button class="bead" onclick="addDua('اللهم ارحمها برحمتك الواسعة')">اللهم ارحمها برحمتك الواسعة</button>
+            <button class="bead" onclick="addDua('اللهم اجعلها من أهل الجنة')">اللهم اجعلها من أهل الجنة</button>
+            <button class="bead" onclick="addDua('اللهم ارفع درجتها في الجنة')">اللهم ارفع درجتها في الجنة</button>
+            <button class="bead" onclick="addDua('اللهم اجعلها من الذين يسيرون على صراطك المستقيم')">اللهم اجعلها من الذين يسيرون على صراطك المستقيم</button>
+            <button class="bead" onclick="addDua('اللهم اجعل قبرها روضة من رياض الجنة')">اللهم اجعل قبرها روضة من رياض الجنة</button>
+            <button class="bead" onclick="addDua('اللهم تقبل عملها واغفر لها')">اللهم تقبل عملها واغفر لها</button>
+
+            <!-- إضافات جديدة من صحيح البخاري -->
+            <button class="bead" onclick="addDua('اللهم اجعل قبرها أول منزل لها في الجنة')">اللهم اجعل قبرها أول منزل لها في الجنة</button>
+            <button class="bead" onclick="addDua('اللهم قها عذاب القبر')">اللهم قها عذاب القبر</button>
+            <button class="bead" onclick="addDua('اللهم اغسلها بالماء والثلج والبرد')">اللهم اغسلها بالماء والثلج والبرد</button>
+        </div>
+        <div id="duaCounter">عدد الأدعية: 0</div>
+    </div>
+ 
+    <div id="customDuaSection">
+        <input type="text" id="customDuaInput" placeholder="أدخل دعاء مخصص هنا" />
+        <button id="customDuaButton">إضافة دعاء مخصص</button>
+    </div>
+    
+    <div id="quoteSection">
+        <p id="quoteText" style="color: aliceblue;">إقتباس ديني سيظهر هنا...</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
